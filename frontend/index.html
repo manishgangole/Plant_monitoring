@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantSense Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>PlantSense Dashboard</h1>
+        </div>
+
+        <div class="plant-card">
+            <img class="plant-image" src="https://images.unsplash.com/photo-1491147334573-44cbb4602074?auto=format&fit=crop&w=300" alt="My Plant">
+            <h2>My Plant</h2>
+            
+            <div class="data-grid">
+                <div class="data-item">
+                    <div class="data-value" id="temperature">--</div>
+                    <div class="data-label">Temperature (°C)</div>
+                </div>
+                <div class="data-item">
+                    <div class="data-value" id="moisture">--</div>
+                    <div class="data-label">Moisture (%)</div>
+                </div>
+                <div class="data-item">
+                    <div class="data-value" id="humidity">--</div>
+                    <div class="data-label">Humidity (%)</div>
+                </div>
+            </div>
+
+            <div class="status" id="status">Initializing...</div>
+            <canvas id="sensor-chart" width="400" height="200"></canvas>
+            <button class="refresh-btn" onclick="fetchData()">Refresh Data</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
