@@ -1,4 +1,4 @@
-# Plant_monitoring
+
 # Plant Monitoring System
 A system to monitor plant health using temperature, humidity, and moisture sensors.
 
